@@ -1,0 +1,156 @@
+:root{
+    --font-navbar: 'Lato', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    z-index: 3;
+    position: fixed;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.logo_container {
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+.logo_container>p:nth-child(2) {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 700;
+    font-family: var(--font-navbar);
+}
+
+.logo_container>svg:nth-child(1) {
+    fill: #64b2ff;
+    margin-right: 0.5rem;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+@media(max-width: 960px) {
+
+    .menu {
+        background-color: black;
+        position: absolute;
+        top: 70px;
+        /* left: 0; */
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: 0.5s all ease;
+        z-index: 1;
+    }
+
+}
+
+
+
+.menu_item {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+
+    .menu_item {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 100px;
+        position: relative;
+    }
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0rem 2.5rem;
+    color: #64b2ff;
+    font-weight: bold;
+    font-family: var(--font-navbar);
+    font-size: 400;
+    cursor: pointer;
+    transition: 0.5s all ease;
+    text-decoration: none;
+    list-style: circle
+}
+
+.item:hover {
+    color: #fff;
+    transition: 0.5s all ease;
+    transform: rotate(3deg);
+}
+
+@media screen and (max-width:960px) {
+    .item {
+        width: 100%;
+    }
+}
+
+.shopping_cart {
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.length_cart {
+    color: #c0f698;
+    position: relative;
+    right: 12px;
+    top: 5px;
+    font-weight: 800;
+}
+
+.shopping_cart>svg {
+    color: #fff;
+}
+
+
+.mobile_icon {
+    display: none;
+}
+
+@media (max-width: 960px) {
+
+    .mobile_icon {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .mobile_icon>svg {
+        fill: #c0f698;
+        margin-right: 0.5rem;
+    }
+}
