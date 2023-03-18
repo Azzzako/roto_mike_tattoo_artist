@@ -1,0 +1,54 @@
+.contact_component{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_container{
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form>h1{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-text);
+}
+
+
+.input_container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 250px;
+}
+
+
+.input_container>label{
+    margin-top: 40px;
+    font-family: var(--font-text);
+    color: white;
+}
+
+.input_container>input{
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.input_container>textarea{
+    max-width: 100%;
+    height: 10em;
+    border-radius: 8px;
+}
+
+@media (max-width:960px){
+    .input_container{
+        padding: 20px;
+    }
+}

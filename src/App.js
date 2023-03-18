@@ -2,6 +2,7 @@
 import { About } from './About/About';
 import './App.css';
 import { Card } from './Card/Card';
+import { Contact } from './Contact/Contact';
 import { Navbar } from './Navbar/Navbar';
 
 function disableScroll() {
@@ -17,6 +18,7 @@ function App() {
       <Navbar/>
       <About/>
       <Card/>
+      <Contact/>
     </div>
   );
 }
